@@ -42,16 +42,16 @@ export default function Catalog() {
   return (
     <section className="mx-auto max-w-7xl px-6 lg:px-10 py-20">
       <span className="eyebrow" style={{ color: "var(--brass-dark)" }}>Catalog</span>
-      <h1 className="font-display text-4xl mt-3 mb-4">Full product catalog</h1>
+      <h1 className="font-display text-4xl mt-3 mb-4">Catalog complet de produse</h1>
       <p className="opacity-70 max-w-xl mb-12">
-        Browse the complete range distributed by Aurel Beauty across both brands.
-        This is a presentation catalog — for pricing and ordering, please contact us directly.
+        Răsfoiește gama completă distribuită de Andreas Distribution, pentru ambele branduri.
+        Acesta este un catalog de prezentare — pentru prețuri și comenzi, te rugăm să ne contactezi direct.
       </p>
 
-      {/* Brand filter */}
+      {/* Filtru branduri */}
       <div className="flex flex-wrap gap-3 mb-6">
         <FilterPill active={brandFilter === "all"} onClick={() => updateBrand("all")}>
-          All brands
+          Toate brandurile
         </FilterPill>
         {BRANDS.map((b) => (
           <FilterPill key={b.slug} active={brandFilter === b.slug} accent={b.accent} onClick={() => updateBrand(b.slug)}>
@@ -60,10 +60,10 @@ export default function Catalog() {
         ))}
       </div>
 
-      {/* Category filter */}
+      {/* Filtru categorii */}
       <div className="flex flex-wrap gap-3 mb-14 pb-6 border-b" style={{ borderColor: "var(--line)" }}>
         <FilterPill active={categoryFilter === "all"} onClick={() => updateCategory("all")} subtle>
-          All categories
+          Toate categoriile
         </FilterPill>
         {visibleCategories.map((c) => (
           <FilterPill key={c.slug} active={categoryFilter === c.slug} onClick={() => updateCategory(c.slug)} subtle>
@@ -73,7 +73,7 @@ export default function Catalog() {
       </div>
 
       {products.length === 0 ? (
-        <p className="opacity-60">No products match this filter yet.</p>
+        <p className="opacity-60">Niciun produs nu corespunde acestui filtru momentan.</p>
       ) : (
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((p) => (

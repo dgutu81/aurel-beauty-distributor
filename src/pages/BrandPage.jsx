@@ -15,15 +15,15 @@ export default function BrandPage() {
     <>
       <section className="relative min-h-[56vh] flex items-end p-8 md:p-16" style={{ background: `linear-gradient(160deg, ${brand.accent}, #201014)` }}>
         <div className="text-white max-w-2xl">
-          <span className="eyebrow opacity-70">Distributed brand</span>
+          <span className="eyebrow opacity-70">Brand distribuit</span>
           <h1 className="font-display text-4xl md:text-6xl mt-3 mb-4">{brand.name}</h1>
           <p className="opacity-85 text-lg leading-relaxed">{brand.description}</p>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 lg:px-10 py-20">
-        <span className="eyebrow" style={{ color: brand.accent }}>Categories</span>
-        <h2 className="font-display text-3xl mt-2 mb-10">Browse by category</h2>
+        <span className="eyebrow" style={{ color: brand.accent }}>Categorii</span>
+        <h2 className="font-display text-3xl mt-2 mb-10">Răsfoiește pe categorii</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {categories.map((c) => (
             <Link
@@ -34,7 +34,7 @@ export default function BrandPage() {
             >
               <span className="font-display text-lg">{c.name}</span>
               <span className="eyebrow opacity-60 group-hover:opacity-100 transition-opacity" style={{ color: brand.accent }}>
-                View products →
+                Vezi produsele →
               </span>
             </Link>
           ))}
@@ -44,11 +44,11 @@ export default function BrandPage() {
       <section className="mx-auto max-w-7xl px-6 lg:px-10 pb-28">
         <div className="flex items-end justify-between mb-10 flex-wrap gap-4">
           <div>
-            <span className="eyebrow" style={{ color: brand.accent }}>Full range</span>
-            <h2 className="font-display text-3xl mt-2">{brand.name} products</h2>
+            <span className="eyebrow" style={{ color: brand.accent }}>Gama completă</span>
+            <h2 className="font-display text-3xl mt-2">Produse {brand.name}</h2>
           </div>
           <Link to={`/catalog?brand=${brand.slug}`} className="eyebrow" style={{ color: brand.accent }}>
-            Open in catalog →
+            Deschide în catalog →
           </Link>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">

@@ -6,35 +6,35 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-16 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="font-display text-xl mb-3">
-            Aurel <span style={{ color: "var(--brass)" }}>Beauty</span> Distribution
+            Andreas <span style={{ color: "var(--brass)" }}>Distribution</span> SRL
           </div>
           <p className="text-sm max-w-sm opacity-70 leading-relaxed">
-            Official distributor of La Sultane de Saba and Age Stop cosmetics.
-            Bringing two distinct beauty worlds to retailers, spas and salons.
+            Distribuitor oficial al brandurilor de cosmetice La Sultane de Saba și Age Stop.
+            Aducem lumi diferite de frumusețe către retaileri, spa-uri și saloane.
           </p>
         </div>
 
         <div>
-          <div className="eyebrow opacity-50 mb-4">Brands</div>
+          <div className="eyebrow opacity-50 mb-4">Branduri</div>
           <ul className="space-y-2 text-sm">
             <li><Link to="/brands/la-sultane-de-saba" className="hover:opacity-70">La Sultane de Saba</Link></li>
             <li><Link to="/brands/age-stop" className="hover:opacity-70">Age Stop</Link></li>
-            <li><Link to="/catalog" className="hover:opacity-70">Full Catalog</Link></li>
+            <li><Link to="/catalog" className="hover:opacity-70">Catalog complet</Link></li>
           </ul>
         </div>
 
         <div>
-          <div className="eyebrow opacity-50 mb-4">Company</div>
+          <div className="eyebrow opacity-50 mb-4">Companie</div>
           <ul className="space-y-2 text-sm">
-            <li><Link to="/about" className="hover:opacity-70">About Us</Link></li>
+            <li><Link to="/about" className="hover:opacity-70">Despre noi</Link></li>
             <li><Link to="/contact" className="hover:opacity-70">Contact</Link></li>
           </ul>
         </div>
       </div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-6 border-t flex flex-col sm:flex-row justify-between gap-2 text-xs opacity-50" style={{ borderColor: "rgba(237,230,216,0.15)" }}>
-        <span>© {new Date().getFullYear()} Aurel Beauty Distribution. All rights reserved.</span>
-        <span>Chișinău, Moldova</span>
+        <span>© {new Date().getFullYear()} Andreas Distribution SRL. Toate drepturile rezervate.</span>
+        <span>București, România</span>
       </div>
     </footer>
   );

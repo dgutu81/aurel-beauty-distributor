@@ -2,11 +2,11 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 const links = [
-  { to: "/", label: "Home" },
+  { to: "/", label: "Acasă" },
   { to: "/brands/la-sultane-de-saba", label: "La Sultane de Saba" },
   { to: "/brands/age-stop", label: "Age Stop" },
   { to: "/catalog", label: "Catalog" },
-  { to: "/about", label: "About" },
+  { to: "/about", label: "Despre noi" },
   { to: "/contact", label: "Contact" },
 ];
 
@@ -21,7 +21,7 @@ export default function Header() {
             A
           </span>
           <span className="font-display text-lg tracking-tight">
-            Aurel <span style={{ color: "var(--brass)" }}>Beauty</span>
+            Andreas <span style={{ color: "var(--brass)" }}>Distribution</span>
           </span>
         </NavLink>
 

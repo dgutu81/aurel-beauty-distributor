@@ -18,7 +18,7 @@ export default function PlaceholderImage({ letter = "•", accent = "#A9803D", c
         className="absolute bottom-2 right-3 eyebrow"
         style={{ color: accent, opacity: 0.6, fontSize: "0.6rem" }}
       >
-        Product photo
+        Poză produs
       </span>
     </div>
   );
